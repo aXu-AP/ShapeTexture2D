@@ -1,0 +1,339 @@
+[gd_scene load_steps=32 format=3 uid="uid://bv13phvxlqvpe"]
+
+[ext_resource type="Script" path="res://addons/shape_texture_2d/shape_texture_2d.gd" id="1_5c4ns"]
+[ext_resource type="Script" path="res://addons/shape_texture_2d/drawable_rectangle.gd" id="2_844d7"]
+[ext_resource type="Script" path="res://addons/shape_texture_2d/drawable_polygon.gd" id="3_br467"]
+[ext_resource type="Script" path="res://addons/shape_texture_2d/drawable_capsule.gd" id="4_g541m"]
+[ext_resource type="Script" path="res://addons/shape_texture_2d/drawable_ellipse.gd" id="5_3is8r"]
+
+[sub_resource type="Gradient" id="Gradient_p1po4"]
+colors = PackedColorArray(0.929579, 0.996308, 0.735452, 1, 0.677149, 0.941563, 0.938797, 1)
+
+[sub_resource type="Resource" id="Resource_ph5g0"]
+script = ExtResource("2_844d7")
+corner_rounding = 8.0
+
+[sub_resource type="Texture2D" id="Texture2D_3ba20"]
+resource_local_to_scene = false
+resource_name = ""
+script = ExtResource("1_5c4ns")
+size = Vector2i(256, 256)
+shape = SubResource("Resource_ph5g0")
+fill_type = 1
+fill_color = Color(1, 1, 1, 1)
+fill_gradient = SubResource("Gradient_p1po4")
+fill_from = Vector2(0, 0)
+fill_to = Vector2(0, 1)
+fill_repeat = "pad"
+stroke_type = 0
+stroke_width = 2.0
+stroke_color = Color(0, 0, 0, 1)
+stroke_from = Vector2(0, 0)
+stroke_to = Vector2(1, 0)
+stroke_repeat = "pad"
+stroke_joint = "round"
+offset = Vector2(0, 0)
+rotation = 0.0
+scale = Vector2(1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rof71"]
+texture = SubResource("Texture2D_3ba20")
+texture_margin_left = 16.0
+texture_margin_top = 16.0
+texture_margin_right = 16.0
+texture_margin_bottom = 16.0
+
+[sub_resource type="Resource" id="Resource_0xjg4"]
+script = ExtResource("3_br467")
+points = 5
+is_star = true
+star_inset = 0.6
+
+[sub_resource type="Texture2D" id="Texture2D_5f4ym"]
+resource_local_to_scene = false
+resource_name = ""
+script = ExtResource("1_5c4ns")
+size = Vector2i(128, 128)
+shape = SubResource("Resource_0xjg4")
+fill_type = 0
+fill_color = Color(1, 0.819608, 0.0313726, 1)
+fill_from = Vector2(0, 0)
+fill_to = Vector2(1, 0)
+fill_repeat = "pad"
+stroke_type = 0
+stroke_width = 4.0
+stroke_color = Color(0.176471, 0.176471, 0.176471, 1)
+stroke_from = Vector2(0, 0)
+stroke_to = Vector2(1, 0)
+stroke_repeat = "pad"
+stroke_joint = "round"
+offset = Vector2(0, 0)
+rotation = 0.0
+scale = Vector2(1, 1)
+
+[sub_resource type="Curve" id="Curve_iqvs4"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.659854, 0), -3.42409, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Resource" id="Resource_h31il"]
+script = ExtResource("3_br467")
+points = 12
+is_star = true
+star_inset = 0.714
+
+[sub_resource type="Texture2D" id="Texture2D_e7n5k"]
+resource_local_to_scene = false
+resource_name = ""
+script = ExtResource("1_5c4ns")
+size = Vector2i(128, 128)
+shape = SubResource("Resource_h31il")
+fill_type = 0
+fill_color = Color(0.917647, 0.87451, 0.862745, 1)
+fill_from = Vector2(0, 0)
+fill_to = Vector2(1, 0)
+fill_repeat = "pad"
+stroke_type = 0
+stroke_width = 34.12
+stroke_color = Color(0.705882, 0.0117647, 0.411765, 1)
+stroke_from = Vector2(0, 0)
+stroke_to = Vector2(1, 0)
+stroke_repeat = "pad"
+stroke_joint = "round"
+offset = Vector2(0, 0)
+rotation = 0.0
+scale = Vector2(1, 1)
+
+[sub_resource type="Gradient" id="Gradient_p3kpk"]
+offsets = PackedFloat32Array(0.00789889, 0.352291)
+colors = PackedColorArray(1, 1, 1, 1, 0.875722, 0.855866, 0.849305, 1)
+
+[sub_resource type="Resource" id="Resource_2ipfw"]
+script = ExtResource("4_g541m")
+width = 0.5
+
+[sub_resource type="Texture2D" id="Texture2D_s7loi"]
+resource_local_to_scene = false
+resource_name = ""
+script = ExtResource("1_5c4ns")
+size = Vector2i(128, 128)
+shape = SubResource("Resource_2ipfw")
+fill_type = 2
+fill_color = Color(1, 1, 1, 1)
+fill_gradient = SubResource("Gradient_p3kpk")
+fill_from = Vector2(0.305, 0.135)
+fill_to = Vector2(1, 0.005)
+fill_repeat = "pad"
+stroke_type = 0
+stroke_width = 1.0
+stroke_color = Color(0, 0, 0, 1)
+stroke_from = Vector2(0, 0)
+stroke_to = Vector2(1, 0)
+stroke_repeat = "pad"
+stroke_joint = "round"
+offset = Vector2(0, 0)
+rotation = 0.0
+scale = Vector2(1, 1)
+
+[sub_resource type="Resource" id="Resource_74nst"]
+script = ExtResource("5_3is8r")
+
+[sub_resource type="Texture2D" id="Texture2D_owle6"]
+resource_local_to_scene = false
+resource_name = ""
+script = ExtResource("1_5c4ns")
+size = Vector2i(128, 128)
+shape = SubResource("Resource_74nst")
+fill_type = 3
+fill_color = Color(1, 1, 1, 1)
+fill_from = Vector2(0, 0)
+fill_to = Vector2(1, 0)
+fill_repeat = "pad"
+stroke_type = 0
+stroke_width = 27.306
+stroke_color = Color(0, 0, 0, 1)
+stroke_from = Vector2(0, 0)
+stroke_to = Vector2(1, 0)
+stroke_repeat = "pad"
+stroke_joint = "round"
+offset = Vector2(0, 0)
+rotation = 0.0
+scale = Vector2(1, 1)
+
+[sub_resource type="Gradient" id="Gradient_8qdlu"]
+colors = PackedColorArray(0.154976, 0.787189, 0.428173, 1, 0.246888, 0.38847, 9.62615e-08, 1)
+
+[sub_resource type="Resource" id="Resource_uy4x4"]
+script = ExtResource("2_844d7")
+corner_rounding = 8.0
+
+[sub_resource type="Gradient" id="Gradient_rjn1a"]
+offsets = PackedFloat32Array(0, 0.694017)
+colors = PackedColorArray(0, 0.646795, 0.378837, 1, 0.121929, 0.182944, 0.0830029, 1)
+
+[sub_resource type="Texture2D" id="Texture2D_o7kys"]
+resource_local_to_scene = false
+resource_name = ""
+script = ExtResource("1_5c4ns")
+size = Vector2i(128, 128)
+shape = SubResource("Resource_uy4x4")
+fill_type = 1
+fill_color = Color(1, 1, 1, 1)
+fill_gradient = SubResource("Gradient_8qdlu")
+fill_from = Vector2(0, 0)
+fill_to = Vector2(0, 1)
+fill_repeat = "pad"
+stroke_type = 2
+stroke_width = 8.0
+stroke_color = Color(0, 0, 0, 1)
+stroke_gradient = SubResource("Gradient_rjn1a")
+stroke_from = Vector2(0, 0)
+stroke_to = Vector2(0, 1)
+stroke_repeat = "pad"
+stroke_joint = "round"
+offset = Vector2(0, 0)
+rotation = 0.0
+scale = Vector2(1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sv64q"]
+texture = SubResource("Texture2D_o7kys")
+texture_margin_left = 16.0
+texture_margin_top = 16.0
+texture_margin_right = 16.0
+texture_margin_bottom = 16.0
+
+[sub_resource type="Gradient" id="Gradient_h8jdb"]
+offsets = PackedFloat32Array(0, 0.992101)
+colors = PackedColorArray(0.837867, 0.637705, 0.768687, 1, 1, 1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_nhue1"]
+script = ExtResource("3_br467")
+points = 3
+is_star = false
+star_inset = 0.5
+
+[sub_resource type="Texture2D" id="Texture2D_43wft"]
+resource_local_to_scene = false
+resource_name = ""
+script = ExtResource("1_5c4ns")
+size = Vector2i(64, 64)
+shape = SubResource("Resource_nhue1")
+fill_type = 0
+fill_color = Color(1, 1, 1, 1)
+fill_gradient = SubResource("Gradient_h8jdb")
+fill_from = Vector2(0, 0)
+fill_to = Vector2(1, 0)
+fill_repeat = "pad"
+stroke_type = 3
+stroke_width = 2.0
+stroke_color = Color(0, 0, 0, 1)
+stroke_from = Vector2(0, 0)
+stroke_to = Vector2(1, 0)
+stroke_repeat = "pad"
+stroke_joint = "round"
+offset = Vector2(0, 0)
+rotation = 90.0
+scale = Vector2(1, 1)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_cuo8v"]
+blend_mode = 1
+
+[sub_resource type="Resource" id="Resource_mnsfe"]
+script = ExtResource("3_br467")
+points = 5
+is_star = false
+star_inset = 0.5
+
+[sub_resource type="Texture2D" id="Texture2D_27nvf"]
+resource_local_to_scene = false
+resource_name = ""
+script = ExtResource("1_5c4ns")
+size = Vector2i(128, 128)
+shape = SubResource("Resource_mnsfe")
+fill_type = 0
+fill_color = Color(1, 1, 1, 1)
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0)
+fill_repeat = "pad"
+stroke_type = 0
+stroke_width = 0.0
+stroke_color = Color(0, 0, 0, 1)
+stroke_from = Vector2(0, 0)
+stroke_to = Vector2(1, 0)
+stroke_repeat = "pad"
+stroke_joint = "round"
+offset = Vector2(0, 0)
+rotation = 0.0
+scale = Vector2(1, 1)
+
+[sub_resource type="Gradient" id="Gradient_rxoks"]
+offsets = PackedFloat32Array(0, 0.987597, 1)
+colors = PackedColorArray(0.984496, 0.984496, 0.984496, 1, 0, 0, 0, 1, 1, 1, 1, 1)
+
+[node name="ShapeTexture2dDemo" type="Panel"]
+clip_contents = true
+custom_minimum_size = Vector2(800, 600)
+theme_override_styles/panel = SubResource("StyleBoxTexture_rof71")
+
+[node name="StarParticles" type="CPUParticles2D" parent="."]
+position = Vector2(0, 600)
+explosiveness = 0.8
+texture = SubResource("Texture2D_5f4ym")
+direction = Vector2(1, -2)
+spread = 20.0
+initial_velocity_min = 300.0
+initial_velocity_max = 800.0
+angular_velocity_min = -300.0
+angular_velocity_max = 300.0
+scale_amount_min = 0.3
+scale_amount_max = 0.5
+scale_amount_curve = SubResource("Curve_iqvs4")
+
+[node name="Flower" type="Sprite2D" parent="."]
+position = Vector2(90, 90)
+texture = SubResource("Texture2D_e7n5k")
+
+[node name="Capsule" type="Sprite2D" parent="."]
+position = Vector2(710, 90)
+texture = SubResource("Texture2D_s7loi")
+
+[node name="Circle" type="Sprite2D" parent="."]
+position = Vector2(710, 510)
+texture = SubResource("Texture2D_owle6")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxTexture_sv64q")
+text = "Let's go!"
+icon = SubResource("Texture2D_43wft")
+
+[node name="TriangleParticles" type="CPUParticles2D" parent="Button"]
+show_behind_parent = true
+material = SubResource("CanvasItemMaterial_cuo8v")
+position = Vector2(212.5, 71)
+amount = 32
+lifetime = 0.5
+texture = SubResource("Texture2D_27nvf")
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 200.0
+initial_velocity_max = 500.0
+angle_min = -180.0
+angle_max = 180.0
+scale_amount_min = 0.2
+scale_amount_max = 0.5
+color = Color(0.207843, 0.247059, 1, 1)
+color_ramp = SubResource("Gradient_rxoks")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
